@@ -23,8 +23,7 @@ p {
 
 .grid {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
 }
 
@@ -33,7 +32,7 @@ p {
     flex-wrap: wrap;
     flex: 0 0 100%;
     padding: 1.5rem;
-    transition: flex-basis 500ms linear;
+    transition: 500ms ease-in-out;
     margin-bottom: 1.5rem;
     border-style: dashed;
     border-color:#fff;
@@ -41,8 +40,6 @@ p {
 }
 
 .card-header {
-    display: flex;
-    position: relative;
     flex: 0 0 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 8px;
@@ -56,17 +53,12 @@ p {
 }
 
 .card-body {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex: 0 0 100%;
+    flex: 0 0 100%; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--heliotrope)
 }
 
 .code-block {
-    display: flex;
-    flex-direction: flex-end;
     flex: 0 0 100%;
     padding: 5px;
     background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
@@ -76,10 +68,14 @@ p {
      user-select: all;
 }
 
+/* This is the section of CSS for the hover animation  */
+
 .code-block:hover {
     box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
     transition: all 0.5s ease-in-out;
 }
+
+/* This is the footer! */
 
 footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -89,6 +85,11 @@ footer {
     justify-content: center;
 }
 
+/* On screens 992px and larger - can't get this to work :( */
 
-
+/* @media screen and (min-width: 992px) {
+    .card-column {
+        
+    }
+}
 
