@@ -30,7 +30,6 @@ p {
 
 .card-column {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     flex: 0 0 100%;
     padding: 1.5rem;
@@ -44,6 +43,7 @@ p {
 .card-header {
     display: flex;
     position: relative;
+    flex: 0 0 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 8px;
     border-width: 2px;
@@ -52,22 +52,33 @@ p {
     color: var(--heliotrope);
     margin-top: -45px;
     background-color: rgb(46, 44, 44);
+    padding-left: 10px;
 }
 
 .card-body {
     display: flex;
-    justify-content: left;
+    flex-direction: row;
+    position: relative;
+    flex: 0 0 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--heliotrope)
 }
 
 .code-block {
     display: flex;
-    justify-content: left;
+    flex-direction: flex-end;
+    flex: 0 0 100%;
+    padding: 5px;
     background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
      rgba(232, 102, 236, 0.6) 100%);
      border-radius: 8px;
      color: #fff;
+     user-select: all;
+}
+
+.code-block:hover {
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+    transition: all 0.5s ease-in-out;
 }
 
 footer {
@@ -77,8 +88,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-
 
 
 
