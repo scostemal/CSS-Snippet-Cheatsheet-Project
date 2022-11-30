@@ -1,0 +1,85 @@
+:root {
+    --heliotrope: rgba(232, 102, 236, 1);
+}
+
+body {
+    background-color: rgb(46, 44, 44);
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    color: var(--heliotrope);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    gap: 20px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    border-style: dashed;
+    border-color:#fff;
+    border-width: 2px;
+}
+
+.card-header {
+    display: flex;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#fff;
+    color: var(--heliotrope);
+    margin-top: -45px;
+    background-color: rgb(46, 44, 44);
+}
+
+.card-body {
+    display: flex;
+    justify-content: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--heliotrope)
+}
+
+.code-block {
+    display: flex;
+    justify-content: left;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+     rgba(232, 102, 236, 0.6) 100%);
+     border-radius: 8px;
+     color: #fff;
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--heliotrope);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
